@@ -1,8 +1,12 @@
 <?php
 
-function indexAction(PDO $connexion) {
+namespace App\Controllers\PostsController;
+
+use \PDO, \App\Models\PostsModel;
+
+function indexAction(\PDO $connexion) {
     include_once '../app/models/postsModel.php';
-    $posts = findAll($connexion);
+    $posts = PostsModel\findAll($connexion);
 
     GLOBAL $content;
     ob_start();
@@ -10,9 +14,11 @@ function indexAction(PDO $connexion) {
     $content = ob_get_clean();
 }
 
+
+
 function showAction(PDO $connexion, int $id) {
     include_once '../app/models/postsModel.php';
-    $post = findOneById($connexion, $id);
+    $post = PostsModel\findOneById($connexion, $id);
 
     GLOBAL $content;
     ob_start();

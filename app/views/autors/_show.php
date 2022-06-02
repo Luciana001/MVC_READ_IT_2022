@@ -1,3 +1,5 @@
+
+
 <div class="about-author d-flex p-4 bg-light">
     <div class="bio mr-5">
         <img src="assets/images/<?php echo $autor['image']; ?>" alt="<?php echo $autor['firstname']; ?>

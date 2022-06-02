@@ -7,14 +7,14 @@
 <!-- TAGS -->
 <?php
     include_once '../app/models/tagsModel.php';
-    $tags = findAllByPostId($connexion, $post['id']);
+    $tags = \App\Models\TagsModel\findAllByPostId($connexion, $post['id']);
     include '../app/views/tags/_indexByPostId.php';
 ?>
 
 <!-- AUTHORS -->
 <?php
     include_once '../app/models/autorsModel.php';
-    $autor = findOneById($connexion, $post['id']);
+    $autor = \App\Models\AutorsModel\findOneById($connexion, $id);
     include '../app/views/autors/_show.php';
 ?>
 
