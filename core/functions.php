@@ -1,6 +1,6 @@
 <?php 
 
-
+namespace Core\Functions;
 
 function getFormatedDate(string $date ,string $format = 'd-m-Y') {
     
