@@ -1,4 +1,4 @@
-<div class="pt-5 mt-5">
+
     
     <h3 class="mb-5"><?php echo count($comments); ?> Comments</h3>
     <ul class="comment-list">

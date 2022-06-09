@@ -18,6 +18,7 @@
     include '../app/views/autors/_show.php';
 ?>
 
+<div class="pt-5 mt-5">
 <!-- COMMENTS -->
 
 <?php
