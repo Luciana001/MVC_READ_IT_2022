@@ -3,7 +3,7 @@
 namespace App\Models\AutorsModel;
 
 function findOneById(\PDO $connexion, int $id){
-    $sql = "SELECT *
+    $sql = "SELECT *, a.image as imageAutor, p.image as imagePost
             FROM authors a
             JOIN posts p on p.author_id = a.id
             WHERE p.id = :id;";
